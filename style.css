@@ -1,0 +1,666 @@
+* {
+    scroll-behavior: smooth;
+    transition: 2sec;
+}
+
+
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index: 10;
+    opacity: 80%;
+}
+
+nav ul li {
+    padding: 0px 50px;
+}
+
+nav .navbar-nav .nav-item .nav-link {
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.navbar-brand {
+    width: 150px;
+    height: 70px;
+    margin-left: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media(max-width: 700px) {
+    .navbar-brand {
+        width: 100px;
+        height: 50px;
+        border-radius: 15px;
+        margin-left: 40px;
+    }
+
+}
+
+
+/*front page heading and keychain and Lanyard ---------------------------------------------------------------------------------------------*/
+
+
+.popup {
+    width: 50px;
+    height: 100px;
+    background-color: gray;
+    position: fixed;
+    top: 500px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.popup img {
+    width: 50px;
+    height: 100px;
+
+}
+
+@media(max-width:700px) {
+    .popup {
+        top: 350px;
+    }
+}
+
+
+
+/*Popup section       ---------------------------------------------------------------------------------------------*/
+
+
+
+
+
+.front-Page {
+    width: 100%;
+    height: 100vh;
+    padding: 150px 50px;
+    margin-bottom: 50px;
+}
+
+.front-Page h1 {
+    font-size: 60px;
+    color: dodgerblue;
+}
+
+
+.front-Page #custm {
+    color: red;
+}
+
+
+.front-Page .keychain {
+    width: 100%;
+    transform: rotate(-20deg);
+    margin: 15px 20px;
+    transition: 1s;
+
+}
+
+.front-Page .keychain:hover {
+    border: 2px solid black;
+    box-shadow: 10px 20px 30px black;
+    transform: rotate(0deg);
+    border-radius: 50px;
+}
+
+
+.front-Page .lanyard {
+    width: 100%;
+    transform: rotate(-20deg);
+    margin: 15px 20px;
+    ;
+    transition: 1s;
+
+
+}
+
+
+.layer-lanyard {
+    background-color: red;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-20deg);
+}
+
+
+.layer-lanyard:hover {
+    transform: rotate(0deg);
+    border-radius: 50px;
+    transform: translateY(-150px)
+}
+
+
+
+.front-Page .lanyard:hover {
+    border: 2px solid black;
+    box-shadow: 10px 20px 30px black;
+    transform: rotate(0deg);
+    border-radius: 50px;
+}
+
+
+.row .textLY {
+    color: limegreen;
+}
+
+
+.row .textIC {
+    color: hotpink;
+}
+
+
+@media(max-width:700px) {
+    .front-Page{
+        margin-bottom: 500px;
+    }
+    
+    .front-Page h1 {
+        font-size: 40px;
+        margin-left: 50px;
+    }
+
+    .front-Page .lanyard {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .front-Page .keychain {
+        width: 90%;
+         margin-top: 30px;
+    }
+}
+
+
+/*Card and Lanyard image Section -----------------------------------------------------------------------------------------------*/
+
+
+
+
+.Gallery-bgOne {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(Images/bgimg.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    transition: 1s;
+    opacity: 80%;
+    margin-bottom: 50px;
+}
+
+.Gallery-bgOne:hover {
+    opacity: 100%;
+}
+
+
+.imageOne img {
+    margin: 50px 50px 50px -500px;
+    transition: .5s;
+}
+
+
+
+.action {
+    transform: translate(600px);
+    opacity: 70%;
+    border-radius: 20px;
+
+
+}
+
+
+.imageTwo img {
+    margin: 50px;
+    border-radius: 20px;
+
+}
+
+@media(max-width:700px) {
+
+    .Gallery-bgOne {
+        margin-top: 600px;
+    }
+
+    .imageOne img {
+        width: 80%;
+        height: 80%;
+        margin: 50px 0px 0px -550px;
+        transition: .5s;
+    }
+
+    .imageTwo img {
+        width: 80%;
+        height: 80%;
+
+
+    }
+
+}
+
+
+
+
+
+
+/*Gallery second  image Section -----------------------------------------------------------------------------------------------*/
+
+
+/*
+
+
+.Gallery-bgTwo {
+    margin-top: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(Images/bgimgOne.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: 1s;
+    opacity: 80%;
+}
+
+.Gallery-bgTwo:hover {
+    opacity: 100%;
+}
+
+
+.imageThree img {
+    position: absolute;
+    margin: 50px 50px 50px 100px;
+    transition: 1s;
+    border-radius: 20px;
+
+}
+
+
+
+.action {
+    transform: translate(600px);
+    opacity: 70%;
+    border-radius: 20px;
+
+}
+
+
+.imageFour img {
+    position: absolute;
+    margin: 50px;
+    opacity: 70%;
+    border-radius: 20px;
+
+}
+*/
+
+/*CARASOL Section starts here    ---------------------------------------------------------- */
+
+
+.carasol-outer {
+/*    margin: 10px 10px 50px;*/
+}
+
+
+
+.carasol-outer img {
+    width: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+
+}
+
+/*test box Section starts here    ---------------------------------------------------------- */
+
+
+
+.services {
+    /*    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(Images/bgimgTwo.jpg);*/
+    background-color: black;
+    margin: 10px 10px 50px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: 1s;
+    opacity: 80%;
+}
+
+
+.services:hover {
+    opacity: 100%;
+}
+
+
+.service-heading h2 {
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 80px;
+
+}
+
+
+.services .textOne {
+    width: 100%;
+    margin: 150px 0px 0px;
+    background-color: black;
+    color: white;
+    line-height: 50PX;
+    font-size: 20PX;
+    opacity: 60%;
+    transition: 1s;
+    border: 1px solid gray;
+    padding: 30px 80px;
+}
+
+
+.services .textOne:hover {
+    box-shadow: 10px 10px 30px black;
+    opacity: 100%;
+}
+
+.services,
+.textOne,
+.textTwo,
+.textThree,
+h3 {
+    color: red;
+    padding-bottom: 30px;
+}
+
+.services .textTwo {
+    width: 100%;
+    margin: 150px 0px 0px;
+    background-color: black;
+    color: white;
+    line-height: 50PX;
+    font-size: 20PX;
+    opacity: 60%;
+    transition: 1s;
+    border: 1px solid gray;
+    padding: 30px 80px;
+
+}
+
+
+
+.services .textTwo:hover {
+    box-shadow: 10px 20px 30px black;
+    opacity: 100%;
+}
+
+
+
+.services .textThree {
+    width: 100%;
+    margin: 150px 0px 0px;
+    background-color: black;
+    color: white;
+    line-height: 50PX;
+    font-size: 20PX;
+    opacity: 60%;
+    transition: 1s;
+    border: 1px solid gray;
+    padding: 30px 80px;
+
+
+}
+
+
+.services .textThree:hover {
+    box-shadow: 10px 20px 30px black;
+    opacity: 100%;
+}
+
+
+
+@media(max-width:700px) {
+
+    .services .textOne {
+        margin: 70px 0px 0px;
+    }
+
+    .services .textTwo {
+        margin: 10px 0px 0px;
+    }
+
+    .services .textThree {
+        margin: 10px 0px 0px;
+    }
+
+    .service-heading h2 {
+        margin-top: 10px;
+        font-size: 30px;
+
+    }
+
+}
+
+
+
+
+/*About us Section starts here    ---------------------------------------------------------- */
+
+
+.about-us {
+    margin: 10px 10px 50px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(Images/bgimg-aboutsection.jpg);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    transition: 1s;
+    opacity: 80%;
+
+}
+
+
+.about-us:hover {
+    opacity: 100%;
+}
+
+
+.about-us h2 {
+    text-align: center;
+    padding-top: 80px;
+    color: white;
+}
+
+
+
+
+
+.about-us p {
+    padding: 30px 120px;
+    color: white;
+    font-size: 20px;
+    line-height: 50px;
+
+}
+
+
+
+
+@media(max-width:700px) {
+    .about-us h2 {
+        font-size: 30px;
+        padding-top: 10px;
+    }
+
+    .about-us p {
+        font-size: 15px;
+        padding: 10px 50px;
+
+    }
+}
+
+
+
+/*Google Location and input Form    ---------------------------------------------------------- */
+
+
+
+.location-map {
+    margin: 10px 10px 50px;
+
+}
+
+
+.location-map .location {}
+
+form {
+    margin-left: 50px;
+}
+
+form h3 {
+    color: white;
+}
+
+
+.form-outerbox {
+    text-align: center;
+    opacity: 70%;
+    transition: 1s;
+}
+
+.form-outerbox:hover {
+    background-color: gray;
+
+
+}
+
+
+.input-filed {
+    width: 60%;
+    margin: 20px 10px;
+    padding: 0px 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    outline: none;
+}
+
+
+.text-filed {
+    width: 60%;
+    height: 150px;
+    margin: 20px;
+    padding: 0px 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    outline: none;
+
+
+
+}
+
+
+.form-btn {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    padding: 5px 30px;
+    border-radius: 10px;
+    transition: .5s;
+    background-color: white;
+
+}
+
+
+.form-btn:hover {
+    background-color: gray;
+    color: white;
+}
+
+/*Footer starts from here------------------------------------------------------------------------------------*/
+
+
+.footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(Images/bgfooterimg.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: whitesmoke;
+    margin: 10px 10px 0px;
+    margin-top: 10px;
+    opacity: 90%;
+    transition: 1s;
+
+}
+
+
+
+
+.footer:hover {
+    opacity: 100%;
+
+}
+
+.footer h2 {
+    padding: 10px;
+}
+
+
+
+.details {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.contact-detailsOne {
+    margin-right: 100px;
+}
+
+
+.contact-detailsTwo {
+    margin-left: 100px;
+}
+
+
+.lines {
+    width: 60%;
+    height: 1px;
+    background-color: white;
+    margin-left: 20%;
+    opacity: 30%;
+}
+
+
+
+@media(max-width:700px) {
+    .footer h2 {
+        font-size: 20px;
+    }
+
+    .contact-detailsOne {
+        margin-right: 50px;
+    }
+
+
+    .contact-detailsTwo {
+        margin-left: 50px;
+    }
+
+
+    .contact-detailsOne h4,
+    h5 {
+        font-size: 12px;
+    }
+
+    .contact-detailsTwo h4,
+    h5 {
+        font-size: 12px;
+    }
+
+}
